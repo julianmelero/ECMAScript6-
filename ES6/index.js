@@ -45,3 +45,58 @@ let lorem2 = `Deserunt consectetur ullamco officia exercitation sint et ex labor
 Consectetur consequat voluptate aliqua officia magna dolore nostrud quis.`;
 
 console.log(lorem2);
+
+
+// Desestructuración
+let person = {
+    name: "Julián",
+    age: 37,
+    country: 'Spain',
+}
+
+// Antes
+console.log(person.name);
+
+// ES6
+let { name, age, country} = person;
+
+console.log(name,age,country);
+
+// Spread Operator
+
+let team1 = ['Julián', 'Óscar', 'Ricardo'];
+let team2 = ['Valeria', 'Yesica','Camila'];
+
+// ES6  ...objeto
+let education = ['David', ...team1, ...team2];
+
+// Let
+// Variables con scope del bloque
+
+{
+    var globalVar = "Global";
+}
+
+{
+    let globalLet = "Global Let";
+}
+console.log(globalVar);
+console.log(globalLet);
+
+// ES6
+{
+    var globalVar = "Global";
+}
+{
+    let globalLet = "Global Let";
+    console.log(`Soy ${globalVar}`);
+}
+
+console.log(globalVar);
+
+// Const Constante, no cambia el valor
+
+const a = 'b';
+
+a = 'a'; //Error
+
