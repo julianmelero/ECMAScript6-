@@ -1,0 +1,19 @@
+{
+  "name": "ecmascript",
+  "version": "1.0.0",
+  "description": "entendiendo ecmascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julianmelero/ECMAScript6-.git"
+  },
+  "author": "Julián Melero Hidalgo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/julianmelero/ECMAScript6-/issues"
+  },
+  "homepage": "https://github.com/julianmelero/ECMAScript6-#readme"
+}
