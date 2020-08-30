@@ -115,7 +115,7 @@ console.log(obj2); // { name: 'Julián', age: 37 }
 
 //  Arrow Functions, o funciones anónimas
 
-const = names = [
+const names = [
     {name: 'Julián',age : 37},
     {name: 'Pepe',  age : 32}
 ]
@@ -178,3 +178,22 @@ MayorEdad()
 .then(response => console.log(response))
 // .then()Se pueden poner más
 .catch(error => console.log(error));
+
+// Clases
+
+class Calculator {
+    constructor() {
+        this.valueA= 0;
+        this.valueB = 0;
+    }
+    sum(a,b) {
+        this.valueA = a;
+        this.valueB = b;        
+        return a + b;
+    }
+}
+
+const calc = new Calculator();
+
+console.log(calc.sum(2,2));
+
