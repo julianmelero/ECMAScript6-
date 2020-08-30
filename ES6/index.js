@@ -205,3 +205,19 @@ console.log(calc.sum(2,2));
 const hello = require('./module');
 
 console.log(hello());
+
+// Generadores
+
+function* helloWorld() {
+    if(true) {
+        yield 'Hello, ';
+    }
+    if(true) {
+        yield 'World';
+    }
+};
+
+const generatorHello = helloWorld();
+console.log(generatorHello.next().value);
+console.log(generatorHello.next().value);
+console.log(generatorHello.next().value);
