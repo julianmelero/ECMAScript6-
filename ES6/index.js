@@ -139,3 +139,42 @@ const listOfNames4 = name => {
 
 const square = num => num * num;
 
+// Promises, se utilizan para trabajar el asincronismo. La promesa es que algo va a pasar
+
+// Estructura
+const helloPromise = () => {
+    // Resolve or reject
+    return new Promise((resolve,reject) => {
+        if(true){
+            resolve('Ok!');
+        }
+        else {
+            reject(':(');
+        }
+    });
+}
+
+helloPromise()
+.then(response => console.log(response))
+// .then()Se pueden poner más
+.catch(error => console.log(error));
+
+
+// Ejemplo
+const MayorEdad = () => {
+    // Resolve or reject
+    return new Promise((resolve,reject) => {
+        var edad = 19;
+        if(edad > 18){
+            resolve('Mayor');
+        }
+        else {
+            reject('Menor');
+        }
+    });
+}
+
+MayorEdad()
+.then(response => console.log(response))
+// .then()Se pueden poner más
+.catch(error => console.log(error));
