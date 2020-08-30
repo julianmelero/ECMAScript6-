@@ -100,3 +100,42 @@ const a = 'b';
 
 a = 'a'; //Error
 
+// Objetos mejorada, parámetros con objetos
+
+let name = 'Julián';
+let age = 37;
+
+// Antes
+obj = { name: name, age: age};
+
+// ES6
+
+obj2 = {name, age}; 
+console.log(obj2); // { name: 'Julián', age: 37 }
+
+//  Arrow Functions, o funciones anónimas
+
+const = names = [
+    {name: 'Julián',age : 37},
+    {name: 'Pepe',  age : 32}
+]
+
+// Antes
+let listOfNames = names.map(function (item) {
+    console.log(item.name);
+});
+
+// ES6
+let listOfNames2 = names.map(item => console.log(item.name));
+
+// Estructura Arrow Function
+const listOfNames3 = (name,age, country) => {
+    console.log();
+}
+
+const listOfNames4 = name => {
+    console.log();
+}
+
+const square = num => num * num;
+
