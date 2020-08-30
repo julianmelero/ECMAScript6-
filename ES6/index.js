@@ -197,3 +197,11 @@ const calc = new Calculator();
 
 console.log(calc.sum(2,2));
 
+// Import
+// LO NUEVO
+// import { hello } from './module';
+
+// Anterior
+const hello = require('./module');
+
+console.log(hello());
